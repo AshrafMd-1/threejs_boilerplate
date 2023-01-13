@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cd src/html && vite",
+    "dev": "cd src/ && vite",
     "build": "vite build",
     "preview": "vite preview"
   },
