@@ -6,4 +6,7 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
 });
 const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 
-export default sphere;
+const mesh={
+    sphere,
+}
+export default mesh;
