@@ -1,5 +1,5 @@
 import * as THREE from 'three';
 
-const light = new THREE.DirectionalLight(0x242424, 1);
-light.position.set(0, 2, 5);
+const light = new THREE.PointLight(0xffffff, 1);
+light.position.set(0, 2, 10);
 export default light;
