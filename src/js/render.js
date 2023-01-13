@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import camera from "./camera.js";
 import scene from "./scene.js";
 
@@ -13,6 +14,9 @@ window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 });
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
 
 const animate = function () {
       renderer.render(scene, camera);
